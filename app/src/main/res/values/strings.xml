@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Clicker</string>
+    <string name="count">Count</string>
+    <string name="Steal_shekel">Украсть шекель!</string>
+    <string name="click_power">Сила клика</string>
+    <string name="total_clicks">Всего кликов</string>
+    <string name="upgrade_button">Улучшить</string>
+    <string name="upgrade_cost">Стоимость улучшения</string>
+    <string name="reset">Перезапуск</string>
+</resources>
