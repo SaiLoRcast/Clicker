@@ -2,7 +2,6 @@ package com.example.clicker;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -42,19 +41,20 @@ public class MainActivity extends AppCompatActivity  {
                 totalClicks++;
                 countTV.setText(String.valueOf(intCountValue));
 
-                totalClicksTV.setText("Всего кликов: " + totalClicks);
+                totalClicksTV.setText(getString(R.string.total_clicks) + " " + totalClicks);
             }
         });
 
         resetBtn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 countTV.setText(String.valueOf(0));
                 upgradeCostTV.setText(String.valueOf(50));
-                powerTV.setText("Сила клика: 1");
+                powerTV.setText(getString(R.string.click_power));
                 upgradeCount = 1;
                 totalClicks = 0;
-                totalClicksTV.setText("Всего кликов: 0");
+                totalClicksTV.setText(getString(R.string.total_clicks) + totalClicks);
             }
         });
 
